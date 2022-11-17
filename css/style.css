@@ -549,6 +549,162 @@ header {
 
 }
 
+/*galeria*/
+
+.galeria {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 600px 400px;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo__g"
+        "imagenes"
+        "promo__g";
+}
+
+.titulo__g {
+    text-align: center;
+    font-size: x-large;
+    color: red;
+    justify-self: center; 
+    align-self: center; 
+    grid-area: titulo__g;
+}
+
+.imagenes {
+    justify-self: center; 
+    align-self: center; 
+    width: 450px;
+    height: 600px;
+    grid-area: imagenes;
+}
+
+.imagenes img {
+    height: 600px;
+    border-radius: 20%;
+}
+
+.promo__g {
+    font-size: x-large;
+    color: red;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: center; 
+    align-self: center; 
+    grid-area: promo__g;
+}
+
+.promo__g img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+
+/*Contacto*/
+
+form {
+    margin-top: 3rem;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacto label {
+    margin: 1rem;
+}
+
+.contacto__input {
+    margin-top: 2rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px dashed #ff1e00;
+    border-left: none;
+    width: 350px;
+    height: 30px;
+    border-radius: 20%;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 4px 4px 2px rgba(0, 255, 0, 0.6);
+
+}
+
+.contacto__form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-family: 'Slabo 27px', serif;
+    font-size: 3rem;
+    font-style: italic;
+
+
+}
+
+.contacto__boton {
+    margin-top: 5rem;
+    color: black;
+    background-color: green;
+    font-size: 2rem;
+    border-radius: 20%;
+    padding: 0.2rem;
+    width: 400px;
+    height: 40px;
+}
+
+/*SHOP*/
+
+.cuerpo {
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+}
+
+.producto__venta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 400px;
+    margin: 2rem;
+    border: solid;
+    padding: 0.2rem;
+}
+
+.producto__venta img {
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    margin-top: 5rem;
+    color: black;
+    background-color: green;
+    font-size: 2rem;
+    border-radius: 20%;
+    padding: 0.2rem;
+    width: 200px;
+    height: 30px;
+}
 
 footer {
     color: white;
