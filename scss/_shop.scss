@@ -1,0 +1,31 @@
+/*SHOP*/
+
+.cuerpo {
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+}
+
+.producto__venta {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 400px;
+    margin: 2rem;
+    border: solid;
+    padding: 0.2rem;
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}

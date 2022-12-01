@@ -1,0 +1,160 @@
+@media screen and (max-width: $pantalla-mediana) {
+
+    /*HOME*/
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 192px);
+        grid-template-rows: 160px 200px 220px 35px 250px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "titulo__img1 titulo__img2 titulo__img3"
+            "propaganda propaganda propaganda"
+            "servicios servicios servicios"
+            "servicios__img1 servicios__img2 servicios__img3";
+    }
+
+    .titulo {
+        margin-top: 0;
+        grid-area: titulo;
+    }
+
+    .titulo__img1 {
+        grid-area: titulo__img1;
+    }
+
+    .titulo__img2 {
+        grid-area: titulo__img2;
+    }
+
+    .titulo__img3 {
+        grid-area: titulo__img3;
+    }
+
+    .propaganda {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: medium;
+        grid-area: propaganda;
+        margin-top: 0;
+
+        img {
+            @include tamaño-img (100px, 150px);
+            margin-top: 0.5rem;
+        }
+
+        iframe {
+            width: 150px;
+            margin-top: 0.5rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .servicios {
+        margin-top: 0;
+        font-size: x-large;
+        grid-area: servicios;
+    }
+
+    .servicios__img1 {
+        grid-area: servicios__img1;
+    }
+
+    .servicios__img2 {
+        grid-area: servicios__img2;
+    }
+
+    .servicios__img3 {
+        grid-area: servicios__img3;
+    }
+
+
+    .titulo__img img {
+        width: 150px;
+        height: 192px;
+
+    }
+
+    .servicios__caja img {
+        width: 150px;
+        height: 192px;
+    }
+
+    /*HISTORIA*/
+
+    .grilla__historia {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px repeat(3, 1fr) 300px;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "historia1 historia1 historia1"
+            "historia2 historia2 historia2"
+            "historia3 historia3 historia3"
+            "propaganda__h propaganda__h propaganda__h";
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .historia1 {
+        grid-area: historia1;
+    }
+
+    .historia2 {
+        grid-area: historia2;
+    }
+
+    .historia3 {
+        grid-area: historia3;
+    }
+
+    .propaganda__h {
+        flex-direction: row;
+        font-size: medium;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: propaganda__h;
+
+        img {
+            width: 100px;
+            height: 150px;
+            margin-top: 0.5rem;
+        }
+
+        iframe {
+            width: 150px;
+            margin-top: 0.5rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .historia {
+        margin-top: 0;
+    }
+
+    .mapa {
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,53 @@
+/*galeria*/
+
+.galeria {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 400px 300px;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo__g"
+        "imagenes"
+        "promo__g";
+}
+
+.titulo__g {
+    text-align: center;
+    font-size: x-large;
+    color: red;
+    justify-self: center;
+    align-self: center;
+    grid-area: titulo__g;
+}
+
+.imagenes {
+    justify-self: center;
+    align-self: center;
+    width: 450px;
+    height: 400px;
+    grid-area: imagenes;
+
+    img {
+        height: 400px;
+        border-radius: 20%;
+    }
+}
+
+.promo__g {
+    font-size: x-large;
+    color: red;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    grid-area: promo__g;
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+    }
+}

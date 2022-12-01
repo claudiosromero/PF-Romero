@@ -1,0 +1,31 @@
+/*Colores tematicos*/
+$tematica: navidad;
+
+
+/*Tamaño de las Pantallas*/
+$pantalla-chica: 480px;
+$pantalla-mediana: 768px;
+
+
+/*EXTEND*/
+
+.tematica-botones-contacto {
+    color: white;
+    background-color: red;
+    border: solid 2px green;
+
+}
+
+/*MIXINS*/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tamaño-img ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+
+}

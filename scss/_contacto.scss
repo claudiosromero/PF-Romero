@@ -1,0 +1,50 @@
+/*Contacto*/
+
+form {
+    margin-top: 3rem;
+}
+
+.contacto {
+    @include flex-center;
+    text-align: center;
+
+    label {
+        margin: 1rem;
+    }
+}
+
+.contacto__input {
+    margin-top: 2rem;
+    border: 2px dashed #ff1e00;
+    width: 350px;
+    height: 30px;
+}
+
+.contacto__form {
+    @include flex-center;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px red;
+
+    div {
+        @include flex-center;
+        flex-direction: column;
+        margin: 1rem;
+        font-family: 'Slabo 27px', serif;
+        font-size: 3rem;
+        font-style: italic;
+    }
+}
+
+.contacto__boton {
+    @extend .tematica-botones-contacto;
+    margin-top: 5rem;
+    font-size: 2rem;
+    border-radius: 20%;
+    padding: 0.2rem;
+    width: 200px;
+transition: 1s;
+
+&:hover {
+    transform: scale(1.2);
+}
+}

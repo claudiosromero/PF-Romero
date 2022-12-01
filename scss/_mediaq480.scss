@@ -1,0 +1,73 @@
+@media screen and (max-width: $pantalla-chica) {
+
+    /*HOME*/
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: 160px repeat(3, 220px) repeat(3, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo titulo"
+            "titulo__img1 propaganda"
+            "titulo__img2 propaganda"
+            "titulo__img3 servicios"
+            "servicios__img1 servicios__img1"
+            "servicios__img2 servicios__img2"
+            "servicios__img3 servicios__img3";
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .titulo__img1 {
+        grid-area: titulo__img1;
+    }
+
+    .titulo__img2 {
+        grid-area: titulo__img2;
+    }
+
+    .titulo__img3 {
+        grid-area: titulo__img3;
+    }
+
+    .propaganda {
+        flex-direction: column;
+        grid-area: propaganda;
+
+    }
+
+
+    .servicios {
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        grid-area: servicios;
+    }
+
+    .servicios__img1 {
+        grid-area: servicios__img1;
+    }
+
+    .servicios__img2 {
+        grid-area: servicios__img2;
+    }
+
+    .servicios__img3 {
+        grid-area: servicios__img3;
+    }
+
+    .historia__desarrollo-p {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
