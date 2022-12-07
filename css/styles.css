@@ -4,8 +4,7 @@
 /*EXTEND*/
 .tematica-botones-contacto, .contacto__boton {
   color: white;
-  background-color: red;
-  border: solid 2px green; }
+  background-color: red; }
 
 /*MIXINS*/
 * {
@@ -20,7 +19,8 @@ html {
   /*trabajo con REM para tamaño de fuentes*/
   font-size: 62.5%; }
   html body {
-    background-color: lightgreen; }
+    background-color: black;
+    color: red; }
 
 a {
   text-decoration: none;
@@ -169,6 +169,7 @@ header {
   align-items: center;
   justify-content: start; }
   .titulo__h1 img {
+    width: 430px;
     height: 100px; }
 
 .servicios {
@@ -221,6 +222,8 @@ header {
 /*Contacto*/
 form {
   margin-top: 3rem; }
+  form textarea {
+    width: 350px; }
 
 .contacto {
   display: flex;
@@ -264,26 +267,27 @@ form {
 
 /*galeria*/
 .galeria {
-  margin-top: 15rem;
+  margin-top: 22rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 400px 300px;
+  grid-template-rows: 80px 400px 300px;
   gap: 20px 0px;
   grid-auto-flow: row;
   grid-template-areas: "titulo__g" "imagenes" "promo__g"; }
 
 .titulo__g {
   text-align: center;
-  font-size: x-large;
+  font-size: large;
   color: red;
   justify-self: center;
   align-self: center;
-  grid-area: titulo__g; }
+  grid-area: titulo__g;
+  margin-bottom: 5rem; }
 
 .imagenes {
   justify-self: center;
   align-self: center;
-  width: 450px;
+  width: 400px;
   height: 400px;
   grid-area: imagenes; }
   .imagenes img {
@@ -486,7 +490,7 @@ form {
     color: white; }
   .grilla {
     display: grid;
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(2, 200px);
     grid-template-rows: 160px repeat(3, 220px) repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -501,12 +505,14 @@ form {
     grid-area: titulo__img3; }
   .propaganda {
     flex-direction: column;
-    grid-area: propaganda; }
+    grid-area: propaganda;
+    width: 209px; }
   .servicios {
     justify-self: center;
     align-self: center;
     align-items: center;
-    grid-area: servicios; }
+    grid-area: servicios;
+    width: 150px; }
   .servicios__img1 {
     grid-area: servicios__img1; }
   .servicios__img2 {

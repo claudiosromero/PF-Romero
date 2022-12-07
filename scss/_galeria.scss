@@ -1,10 +1,10 @@
 /*galeria*/
 
 .galeria {
-    margin-top: 15rem;
+    margin-top: 22rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 400px 300px;
+    grid-template-rows: 80px 400px 300px;
     gap: 20px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -15,17 +15,18 @@
 
 .titulo__g {
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     color: red;
     justify-self: center;
     align-self: center;
     grid-area: titulo__g;
+    margin-bottom: 5rem;
 }
 
 .imagenes {
     justify-self: center;
     align-self: center;
-    width: 450px;
+    width: 400px;
     height: 400px;
     grid-area: imagenes;
 

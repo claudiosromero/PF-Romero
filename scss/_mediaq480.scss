@@ -9,7 +9,7 @@
 
     .grilla {
         display: grid;
-        grid-template-columns: repeat(2, 240px);
+        grid-template-columns: repeat(2, 200px);
         grid-template-rows: 160px repeat(3, 220px) repeat(3, 1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -42,7 +42,7 @@
     .propaganda {
         flex-direction: column;
         grid-area: propaganda;
-
+        width: 209px;
     }
 
 
@@ -51,6 +51,7 @@
         align-self: center;
         align-items: center;
         grid-area: servicios;
+        width: 150px;
     }
 
     .servicios__img1 {
